@@ -1,0 +1,14 @@
+Forward secrecy的大致意思是：用来产生会话密钥(session key)的长期密钥(long-term key)泄露出去，不会造成之前通讯时使用的会话密钥(session key)的泄露，也就不会暴漏以前的通讯内容。简单的说，当你丢了这个long-term key之后，你以后的行为的安全性无法保证，但是你之前的行为是保证安全的。
+forward security的保证的是：敌手获取到了你当前的密钥，但是也无法成功伪造一个过去的签名。
+Forward secrecy或者forward security的公钥环境下的（签名、密钥交换或加密）方案，其公钥是固定的，而密钥则随着时间进行更新。这个更新过程是单向的，因此也就保证了拿到当前的密钥，是无法恢复出以前的密钥，从而保证了“前向安全”。
+
+
+TLS完美前向保密（perfect forward secrecy
+https://blog.csdn.net/gufachongyang02/article/details/53392842
+
+https://baike.baidu.com/item/%E5%AE%8C%E5%85%A8%E6%AD%A3%E5%90%91%E4%BF%9D%E5%AF%86/15384675?fr=aladdin
+
+
+
+13820636756@163.com
+clfclf1995
